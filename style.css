@@ -412,6 +412,43 @@ font-size: 30px;
     background-color: rgb(47, 71, 104);
     padding: 20px;
 }
+.contact_contenaire{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.contact_contenaire div{
+    flex-basis: 40%;
+}
+.form p{
+    color: rgb(47, 71, 104);
+    font-weight: bold;
+}
+.form input{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid gray;
+    outline-color: red;
+}
+.form textarea{
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline-color: red;
+}
+.form button{
+    text-transform: uppercase;
+    background-color: rgb(47, 71, 104);
+    color: white;
+    border: none;
+    padding: 15px;
+}
 /******************************media*******************************************/
 @media screen and (max-width:1180px) {
     .main_div {
