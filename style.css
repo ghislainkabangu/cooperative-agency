@@ -419,10 +419,21 @@ font-size: 30px;
     padding: 10px;
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
 .contact_contenaire div{
     flex-basis: 40%;
+}
+.contact_contenaire div h4{
+    color: rgb(47, 71, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.contact_contenaire div ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(47, 71, 104);
+    word-spacing: 5px;
 }
 .form p{
     color: rgb(47, 71, 104);
@@ -430,6 +441,7 @@ font-size: 30px;
 }
 .form input{
     width: 100%;
+    height: 30px;
     border: none;
     padding: 5px;
     border-bottom: 2px solid gray;
@@ -448,6 +460,19 @@ font-size: 30px;
     color: white;
     border: none;
     padding: 15px;
+    transition: ease-in-out 0.5s;
+}
+.form button:hover{
+    padding: 20px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+/*************************************footer**********************************/
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
 }
 /******************************media*******************************************/
 @media screen and (max-width:1180px) {
@@ -504,5 +529,11 @@ font-size: 30px;
     .apropos_contenaire div{
         flex-basis: 100%;
     }
-
+    .contact_contenaire{
+        width: 90%;
+    }
+    .contact_contenaire div{
+        flex-basis: 100%;
+        padding: 10px;
+    }
 }
