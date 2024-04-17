@@ -230,6 +230,7 @@ section div img {
     text-align: center;
 }
 
+/**************************************************************************/
 article {
     margin-top: 50px;
     display: flex;
@@ -250,7 +251,8 @@ p,
 a {
     font-family: Arial, Helvetica, sans-serif;
 }
-article div h4{
+
+article div h4 {
     font-size: 20px;
 }
 
@@ -258,15 +260,18 @@ article div img {
     width: 100%;
     height: 300px;
 }
-.article_div_un{
+
+.article_div_un {
     background-color: rgb(47, 71, 104);
     text-align: center;
     color: white;
 }
-.article_div_deux{
+
+.article_div_deux {
     color: rgb(47, 71, 104);
 }
-.article_div_deux a{
+
+.article_div_deux a {
     text-decoration: none;
     color: rgb(47, 71, 104);
     border: 1px solid rgb(47, 71, 104);
@@ -274,19 +279,105 @@ article div img {
     padding: 5px;
     transition: ease 0.5s;
 }
-.article_div_deux a:hover{
+
+.article_div_deux a:hover {
     background-color: rgb(47, 71, 104);
     color: gainsboro;
     transition: ease 0.5s;
 }
-.article_div_trois{
+
+.article_div_trois {
     text-align: center;
 }
-.article_div_quatre{
+
+.article_div_quatre {
     background-color: rgb(47, 71, 104, 0.3);
     color: rgb(47, 71, 104);
     text-align: center;
 }
+
+/***********************************************cooperation********************************/
+.cooperation {
+    margin-top: 50px;
+    background: linear-gradient(rgb(47, 71, 104), rgb(0, 0, 0, 0.5)), url("album/coopertaion.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 500px;
+}
+
+/*****************************************************/
+.besoin_demande {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(47, 71, 104);
+    position: relative;
+    bottom: 50px;
+
+}
+
+.besoin_demande h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+.besoin_demande p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/*********************************aside****************************************/
+aside {
+    padding: 10px;
+}
+aside h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(47, 71, 104);
+    font-size: 30px;
+}
+aside h5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+.aside_contenaire{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.aside_contenaire div{
+    flex-basis: 25%;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aside_contenaire div h4{
+    font-size: 25px;
+   
+}
+.aside_contenaire_div_un{
+    background-color: rgb(47, 71, 104, 0.3);
+    color: white;
+}
+.aside_contenaire_div_deux{
+    background-color: rgb(121, 118, 118, 0.1);
+    color: rgb(47, 71, 104);
+}
+.aside_contenaire_div_deux h4{
+    color: rgb(47, 71, 104);
+}
+.aside_contenaire_div_trois{
+    background-color:rgb(47, 71, 104) ;
+    color: white;
+}
+/******************************media*******************************************/
 @media screen and (max-width:1180px) {
     .main_div {
         margin-top: 150px;
@@ -295,14 +386,17 @@ article div img {
     .service div {
         flex-basis: 40%;
     }
-    article div{
+
+    article div {
         flex-basis: 40%;
         height: 300px;
     }
-    article div p{
+
+    article div p {
         padding-top: 50px;
     }
-    .article_div_deux h4{
+
+    .article_div_deux h4 {
         padding-bottom: 60px;
     }
 }
@@ -321,8 +415,13 @@ article div img {
         flex-basis: 100%;
         margin-top: 10px;
     }
-    article div{
+
+    article div {
         flex-basis: 80%;
+    }
+    .aside_contenaire div{
+        flex-basis: 100%;
+
     }
 
 }
