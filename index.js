@@ -9,14 +9,14 @@ openBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-  sidenav.style = "left: -350px";
+  sidenav.style = "left: -300px";
   sidenav.classList.add("active");
 });
 
 let links = document.querySelectorAll(".link");
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", () => {
-    sidenav.style = "left: -350px";
+    sidenav.style = "left: -300px";
   });
 }
 /*********************************************** */
