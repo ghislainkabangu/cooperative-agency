@@ -7,9 +7,11 @@ body {
     font-style: normal;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body div,
 main,
 header,
@@ -101,7 +103,8 @@ main {
     padding: 6px;
     transition: 0.5s;
 }
-.main_div a:hover{
+
+.main_div a:hover {
     background-color: white;
     color: inherit;
     letter-spacing: 1px;
@@ -149,6 +152,10 @@ main {
     padding-top: 30;
     padding-bottom: 30;
     color: white;
+}
+
+.service div i {
+    font-size: 50px;
 }
 
 .background {
@@ -450,10 +457,12 @@ aside h5 {
     border-bottom: 2px solid gray;
     outline-color: red;
 }
-.form input::-webkit-input-placeholder{
+
+.form input::-webkit-input-placeholder {
     opacity: 0.3;
     font-style: oblique;
 }
+
 .form textarea {
     width: 100%;
     height: 70px;
@@ -461,10 +470,12 @@ aside h5 {
     border-bottom: 2px solid gray;
     outline-color: red;
 }
-.form textarea::-webkit-input-placeholder{
+
+.form textarea::-webkit-input-placeholder {
     opacity: 0.3;
     font-style: oblique;
 }
+
 .form button {
     text-transform: uppercase;
     background-color: rgb(47, 71, 104);
@@ -487,6 +498,17 @@ footer {
     color: white;
     background-color: rgba(0, 0, 0, 0.521);
     font-size: small;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer ul li a i {
+    color: white;
+    font-size: 15px
 }
 
 /******************************media*******************************************/
