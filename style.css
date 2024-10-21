@@ -19,8 +19,11 @@ section {
 }
 
 header {
-    margin: auto;
-    padding: 5px;
+    position: fixed;
+    width: 100%;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
 }
 nav ul{
     text-align: center;
@@ -100,8 +103,8 @@ main {
 }
 
 .main_div {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
    /* border: 5px solid white;*/
 }
 
@@ -290,13 +293,13 @@ article div img {
     text-align: justify;
 }
 .article_div_deux {
-    color: black;
+    color: gray;
 }
 
 .article_div_deux a {
     text-decoration: none;
     color: black;
-    border: 2px solid black;
+    border: 2px solid gray;
     text-transform: uppercase;
     padding: 5px;
     font-weight: 300;
@@ -305,7 +308,7 @@ article div img {
 
 .article_div_deux a:hover {
     border: none;
-    background-color: black;
+    background-color: gray;
     color: white;
     transition: ease 0.5s;
 }
@@ -394,7 +397,7 @@ aside h5 {
 }
 
 .aside_contenaire_div_un {
-    background-color: rgb(47, 71, 104, 0.3);
+    background-color: gray;
     color: white;
 }
 

@@ -16,7 +16,7 @@ closeBtn.addEventListener("click", () => {
 let links = document.querySelectorAll(".link");
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", () => {
-    sidenav.style = "left: -300px";
+    sidenav.style = "left: -100%";
   });
 }
 /*********************************************** */
