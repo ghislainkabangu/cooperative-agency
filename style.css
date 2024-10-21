@@ -1,10 +1,9 @@
 body {
     margin: auto;
-   background-color: white;
-   font-family: "Poppins", sans-serif;
-   font-weight: 200;
-   font-style: normal
-
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal
 }
 
 html {
@@ -23,27 +22,35 @@ header {
     width: 100%;
     padding: 4px;
     background-color: white;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px white;
+    background-color: rgb(176, 0, 88);
 }
-nav ul{
+
+nav ul {
     text-align: center;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color: rgb(176, 0, 88);
-}
-nav ul li a:hover{
-    border-bottom: 2px solid rgb(176, 0, 88);
-    font-weight:bold;
+    color: white;
     transition: 0.5s;
 }
-header i{
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+header i {
     font-size: 30px;
 }
+
 #mysidenav {
     height: 100%;
     width: 100%;
@@ -87,9 +94,11 @@ header i{
     right: 25px;
     font-size: 36px;
 }
-.openBtn{
+
+.openBtn {
     display: none;
 }
+
 /***************************main****************************************/
 main {
     margin: auto;
@@ -105,7 +114,7 @@ main {
 .main_div {
     margin-top: 150px;
     margin-bottom: 150px;
-   /* border: 5px solid white;*/
+    /* border: 5px solid white;*/
 }
 
 .main_div h1 {
@@ -200,9 +209,11 @@ main {
     letter-spacing: 2px;
     text-transform: lowercase;
 }
-.service div i{
+
+.service div i {
     font-size: 30px;
 }
+
 .service div p {
     text-align: justify;
 }
@@ -289,9 +300,11 @@ article div img {
     text-align: center;
     color: white;
 }
-.article_div_un p{
+
+.article_div_un p {
     text-align: justify;
 }
+
 .article_div_deux {
     color: gray;
 }
@@ -322,7 +335,8 @@ article div img {
     color: rgb(176, 0, 88);
     text-align: center;
 }
-.article_div_quatre p{
+
+.article_div_quatre p {
     text-align: justify;
     color: black;
 }
@@ -367,14 +381,15 @@ aside {
 
 aside h3 {
     text-align: center;
-    color:rgb(176, 0, 88);
+    color: rgb(176, 0, 88);
     font-size: 30px;
 }
 
-aside h5 {
+.asideP {
     text-align: center;
     font-size: 15px;
     color: black;
+    font-weight: 300;
 }
 
 .aside_contenaire {
@@ -436,7 +451,7 @@ aside h5 {
 }
 
 .apropos_contenaire div h4 {
-    color:rgb(176, 0, 88);
+    color: rgb(176, 0, 88);
     font-size: 30px;
 }
 
@@ -495,10 +510,16 @@ aside h5 {
     padding: 5px;
     border: 1px solid gray;
     outline-color: rgb(176, 0, 88);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .form input::-webkit-input-placeholder {
-    opacity: 0.3;
+    opacity: 0.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .form textarea {
@@ -507,11 +528,16 @@ aside h5 {
     border: none;
     border: 1px solid gray;
     outline-color: rgb(176, 0, 88);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .form textarea::-webkit-input-placeholder {
-    opacity: 0.3;
-    font-style: oblique;
+    opacity: 0.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .form button {
@@ -581,12 +607,14 @@ footer ul li a i {
 }
 
 @media screen and (max-width:800px) {
-    header nav{
+    header nav {
         display: none;
     }
-    .openBtn{
+
+    .openBtn {
         display: block;
     }
+
     .main_div {
         margin-top: 100px;
     }
