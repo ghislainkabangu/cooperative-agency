@@ -1,10 +1,9 @@
 body {
     margin: auto;
-    background-color: gainsboro;
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    /*font-weight: <weight>;*/
-    font-style: normal;
+   background-color: white;
+   font-family: "Poppins", sans-serif;
+   font-weight: 200;
+   font-style: normal
 
 }
 
@@ -23,15 +22,33 @@ header {
     margin: auto;
     padding: 5px;
 }
-
+nav ul{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(176, 0, 88);
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(176, 0, 88);
+    font-weight:bold;
+    transition: 0.5s;
+}
+header i{
+    font-size: 30px;
+}
 #mysidenav {
     height: 100%;
-    width: 300px;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0px;
-    left: -350px;
-    background-color: rgb(47, 71, 104);
+    left: -100%;
+    background-color: rgb(176, 0, 88);
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -54,6 +71,7 @@ header {
     padding: 0px;
     padding-top: 10px;
     margin: 0px;
+    text-align: center;
 }
 
 #mysidenav ul li {
@@ -66,13 +84,15 @@ header {
     right: 25px;
     font-size: 36px;
 }
-
+.openBtn{
+    display: none;
+}
 /***************************main****************************************/
 main {
     margin: auto;
     padding: 20px;
     background: url("album/fond.jpg");
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(47, 71, 104)), url("album/fond.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(176, 0, 88)), url("album/coop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -80,8 +100,9 @@ main {
 }
 
 .main_div {
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   /* border: 5px solid white;*/
 }
 
 .main_div h1 {
@@ -107,6 +128,7 @@ main {
 .main_div a:hover {
     background-color: white;
     color: inherit;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -121,18 +143,17 @@ main {
 .second_tittre h2 {
     font-size: 30px;
     letter-spacing: 2px;
-    color: rgb(47, 71, 104);
+    color: rgb(176, 0, 88);
 }
 
 .second_tittre h3 {
     font-weight: normal;
     letter-spacing: 1px;
-    color: rgb(47, 71, 104, 0.5);
+    color: black;
 }
 
 /*****************************service*************************************************/
 .contenaire_service {
-    background-color: gainsboro;
     padding: 20px;
     margin-bottom: 100px;
 }
@@ -174,15 +195,18 @@ main {
 
 .service div h3 {
     letter-spacing: 2px;
+    text-transform: lowercase;
 }
-
+.service div i{
+    font-size: 30px;
+}
 .service div p {
     text-align: justify;
 }
 
 /******************************************section*****************************/
 section {
-    background-color: gray;
+    background-color: rgb(176, 0, 88);
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -205,6 +229,7 @@ section div p {
 
 section div h4 {
     font-size: 20px;
+    text-transform: lowercase;
 }
 
 section div a {
@@ -237,6 +262,7 @@ article {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 
 article div {
@@ -256,27 +282,31 @@ article div img {
 }
 
 .article_div_un {
-    background-color: rgb(47, 71, 104);
+    background-color: rgb(176, 0, 88);
     text-align: center;
     color: white;
 }
-
+.article_div_un p{
+    text-align: justify;
+}
 .article_div_deux {
-    color: rgb(47, 71, 104);
+    color: black;
 }
 
 .article_div_deux a {
     text-decoration: none;
-    color: rgb(47, 71, 104);
-    border: 1px solid rgb(47, 71, 104);
+    color: black;
+    border: 2px solid black;
     text-transform: uppercase;
     padding: 5px;
+    font-weight: 300;
     transition: ease 0.5s;
 }
 
 .article_div_deux a:hover {
-    background-color: rgb(47, 71, 104);
-    color: gainsboro;
+    border: none;
+    background-color: black;
+    color: white;
     transition: ease 0.5s;
 }
 
@@ -285,15 +315,19 @@ article div img {
 }
 
 .article_div_quatre {
-    background-color: rgb(47, 71, 104, 0.3);
-    color: rgb(47, 71, 104);
+    background-color: white;
+    color: rgb(176, 0, 88);
     text-align: center;
+}
+.article_div_quatre p{
+    text-align: justify;
+    color: black;
 }
 
 /***********************************************cooperation********************************/
 .cooperation {
     margin-top: 50px;
-    background: linear-gradient(rgb(47, 71, 104), rgb(0, 0, 0, 0.5)), url("album/coopertaion.jpg");
+    background-image: url("album/coopertaion.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -307,7 +341,7 @@ article div img {
     width: 50%;
     text-align: center;
     padding: 20px;
-    background-color: rgb(47, 71, 104);
+    background-color: rgb(176, 0, 88);
     word-wrap: break-word;
     position: relative;
     bottom: 50px;
@@ -330,14 +364,14 @@ aside {
 
 aside h3 {
     text-align: center;
-    color: rgb(47, 71, 104);
+    color:rgb(176, 0, 88);
     font-size: 30px;
 }
 
 aside h5 {
     text-align: center;
     font-size: 15px;
-    color: gray;
+    color: black;
 }
 
 .aside_contenaire {
@@ -370,11 +404,11 @@ aside h5 {
 }
 
 .aside_contenaire_div_deux h4 {
-    color: rgb(47, 71, 104);
+    color: black;
 }
 
 .aside_contenaire_div_trois {
-    background-color: rgb(47, 71, 104);
+    background-color: rgb(176, 0, 88);
     color: white;
 }
 
@@ -382,7 +416,6 @@ aside h5 {
 .apropos {
     margin-top: 50px;
     padding: 30px;
-    background-color: rgb(149, 145, 145);
 }
 
 .apropos_contenaire {
@@ -400,13 +433,13 @@ aside h5 {
 }
 
 .apropos_contenaire div h4 {
-    color: rgb(47, 71, 104);
+    color:rgb(176, 0, 88);
     font-size: 30px;
 }
 
 .apropos_contenaire div p {
     text-align: justify;
-    color: rgb(47, 71, 104);
+    color: black;
 }
 
 .apropos_contenaire div img {
@@ -415,7 +448,7 @@ aside h5 {
 
 /************************contact******************************************/
 .contact {
-    background-color: rgb(47, 71, 104);
+    background-color: rgb(176, 0, 88);
     padding: 20px;
 }
 
@@ -435,18 +468,21 @@ aside h5 {
 }
 
 .contact_contenaire div h4 {
-    color: rgb(47, 71, 104);
+    color: rgb(176, 0, 88);
     font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: lowercase;
 }
 
 .contact_contenaire div ul li {
-    color: rgb(47, 71, 104);
+    color: black;
     word-spacing: 5px;
 }
 
 .form p {
-    color: rgb(47, 71, 104);
-    font-weight: bold;
+    color: rgb(176, 0, 88);
 }
 
 .form input {
@@ -454,21 +490,20 @@ aside h5 {
     height: 30px;
     border: none;
     padding: 5px;
-    border-bottom: 2px solid gray;
-    outline-color: red;
+    border: 1px solid gray;
+    outline-color: rgb(176, 0, 88);
 }
 
 .form input::-webkit-input-placeholder {
     opacity: 0.3;
-    font-style: oblique;
 }
 
 .form textarea {
     width: 100%;
     height: 70px;
     border: none;
-    border-bottom: 2px solid gray;
-    outline-color: red;
+    border: 1px solid gray;
+    outline-color: rgb(176, 0, 88);
 }
 
 .form textarea::-webkit-input-placeholder {
@@ -478,10 +513,13 @@ aside h5 {
 
 .form button {
     text-transform: uppercase;
-    background-color: rgb(47, 71, 104);
+    background-color: rgb(176, 0, 88);
     color: white;
     border: none;
     padding: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     transition: ease-in-out 0.5s;
 }
 
@@ -540,6 +578,12 @@ footer ul li a i {
 }
 
 @media screen and (max-width:800px) {
+    header nav{
+        display: none;
+    }
+    .openBtn{
+        display: block;
+    }
     .main_div {
         margin-top: 100px;
     }
@@ -572,7 +616,7 @@ footer ul li a i {
     }
 
     .contact_contenaire {
-        width: 90%;
+        width: 95%;
     }
 
     .contact_contenaire div {

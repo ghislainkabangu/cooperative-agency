@@ -9,7 +9,7 @@ openBtn.addEventListener("click", () => {
 });
 
 closeBtn.addEventListener("click", () => {
-  sidenav.style = "left: -300px";
+  sidenav.style = "left: -100%";
   sidenav.classList.add("active");
 });
 
