@@ -586,7 +586,23 @@ footer ul li a i {
     .main_div {
         margin-top: 150px;
     }
-
+    .main_div {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        /* border: 5px solid white;*/
+    }
+    
+    .main_div h1 {
+        letter-spacing: 0px;
+        color: white;
+        font-size: 40px;
+    }
+    
+    .main_div p {
+        font-size: large;
+        color: white;
+        padding-bottom: 20px;
+    }
     .service div {
         flex-basis: 40%;
     }
