@@ -103,7 +103,7 @@ main {
     margin: auto;
     padding: 20px;
     background: url("album/fond.jpg");
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(176, 0, 88)), url("album/coop.png");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(150, 52, 101)), url("album/coop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -220,7 +220,7 @@ main {
 
 /******************************************section*****************************/
 section {
-    background-color: rgb(176, 0, 88);
+    background-color: rgb(150, 52, 101);
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -469,7 +469,7 @@ aside h3 {
 
 /************************contact******************************************/
 .contact {
-    background-color: rgb(176, 0, 88);
+    background-color: rgb(150, 52, 101);
     padding: 20px;
 }
 
@@ -586,23 +586,25 @@ footer ul li a i {
     .main_div {
         margin-top: 150px;
     }
+
     .main_div {
         margin-top: 50px;
         margin-bottom: 50px;
         /* border: 5px solid white;*/
     }
-    
+
     .main_div h1 {
         letter-spacing: 0px;
         color: white;
         font-size: 40px;
     }
-    
+
     .main_div p {
         font-size: large;
         color: white;
         padding-bottom: 20px;
     }
+
     .service div {
         flex-basis: 40%;
     }
