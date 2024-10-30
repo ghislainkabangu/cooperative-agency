@@ -220,7 +220,7 @@ main {
 
 /******************************************section*****************************/
 section {
-    background-color: rgb(150, 52, 101);
+    background-color: rgb(176, 0, 88);
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -469,7 +469,7 @@ aside h3 {
 
 /************************contact******************************************/
 .contact {
-    background-color: rgb(150, 52, 101);
+    background-color: rgb(176, 0, 88);
     padding: 20px;
 }
 
